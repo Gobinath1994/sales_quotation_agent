@@ -1,0 +1,88 @@
+{
+  "Polaris Central": {
+    "contact_name": "Jessica Ford",
+    "email": "sales@polariscentral.com.au",
+    "phone": "+61 8 9274 1212",
+    "company": "Polaris Central",
+    "models": [
+      {
+        "model": "RZR XP 1000",
+        "price": 29999,
+        "description": "High-performance off-road ATV.",
+        "category": "Recreational Vehicle"
+      },
+      {
+        "model": "Ranger 570",
+        "price": 13499,
+        "description": "Versatile utility vehicle for farms and light transport.",
+        "category": "Utility Vehicle"
+      }
+    ]
+  },
+  "Lift Equipt": {
+    "contact_name": "Matthew King",
+    "email": "info@liftequipt.com.au",
+    "phone": "+61 3 9922 2200",
+    "company": "Lift Equipt",
+    "models": [
+      {
+        "model": "HELI CPD25",
+        "price": 24999,
+        "description": "Electric forklift for indoor environments.",
+        "category": "Electric Forklift"
+      },
+      {
+        "model": "Komatsu FD30",
+        "price": 29950,
+        "description": "Heavy-duty diesel forklift for outdoor use.",
+        "category": "Diesel Forklift"
+      }
+    ]
+  },
+  "Bobcat Forklifts Australia": {
+    "contact_name": "Liam Carter",
+    "email": "info@bobcatforklifts.com.au",
+    "phone": "+61 2 9604 7766",
+    "company": "Bobcat Forklifts Australia",
+    "models": [
+      {
+        "model": "Bobcat B35X",
+        "price": 18999,
+        "description": "Compact forklift for tight warehouse operations.",
+        "category": "Compact Forklift"
+      },
+      {
+        "model": "Bobcat E50",
+        "price": 45999,
+        "description": "Excavator ideal for landscaping and trenching.",
+        "category": "Excavator"
+      }
+    ]
+  },
+  "Rombus Industries": {
+    "contact_name": "Emily Tran",
+    "email": "contact@rombusindustries.com.au",
+    "phone": "+61 7 3123 4500",
+    "company": "Rombus Industries",
+    "models": [
+      {
+        "model": "Rombus ARC2000",
+        "price": 8999,
+        "description": "Industrial arc welding machine.",
+        "category": "Welding Equipment"
+      },
+      {
+        "model": "Rombus AirMax 300",
+        "price": 5799,
+        "description": "Efficient air compressor for workshops.",
+        "category": "Compressor"
+      },
+      {
+        "model": "Rombus PowerDrive 600",
+        "price": 10499,
+        "description": "High-torque drive motor for manufacturing.",
+        "category": "Industrial Motor"
+      }
+    ]
+  }
+}
