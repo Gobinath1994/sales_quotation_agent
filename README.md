@@ -1,32 +1,36 @@
+
+---
+
 # 🧾 Sales Quotation Generator (Offline AI-Powered)
 
-An offline, intelligent sales quotation generator built for Johnston Group Australia. It creates tailored PDF quotes across brands like **Polaris Central**, **Lift Equipt**, **Rombus Industries**, and **Bobcat Forklifts Australia**, powered by a **local LLM** (e.g., Mistral-7B) via **LM Studio**.
+An offline, intelligent sales quotation generator that creates tailored PDF quotes across multiple product lines, powered by a **local LLM** (e.g., Mistral-7B) via **LM Studio**.
 
 ---
 
 ## 🚀 Features
 
-- 🧠 AI-generated professional sales quotes
-- 📄 Automatically generates downloadable PDFs
-- 🗃️ Saves quotes to a local **MySQL** database
-- 🧾 View quote history from the Streamlit sidebar
-- ✅ Fully offline – no cloud dependencies
-- 🧱 Supports brand-specific:
-  - Contacts (name, email, phone)
-  - Product catalogs (model, category, price, description)
+* 🧠 AI-generated professional sales quotes
+* 📄 Automatically generates downloadable PDFs
+* 🗃️ Saves quotes to a local **MySQL** database
+* 🧾 View quote history from the Streamlit sidebar
+* ✅ Fully offline – no cloud dependencies
+* 🧱 Supports brand-specific:
+
+  * Contacts (name, email, phone)
+  * Product catalogs (model, category, price, description)
 
 ---
 
 ## 🧰 Tech Stack
 
-| Layer         | Tech                      |
-|---------------|---------------------------|
-| UI            | Streamlit                 |
-| LLM           | Mistral-7B via LM Studio  |
-| PDF Engine    | ReportLab (Platypus)      |
-| DB Storage    | MySQL                     |
-| Environment   | Conda / Python 3.11+      |
-| Data          | `brand_models.json`       |
+| Layer       | Tech                     |
+| ----------- | ------------------------ |
+| UI          | Streamlit                |
+| LLM         | Mistral-7B via LM Studio |
+| PDF Engine  | ReportLab (Platypus)     |
+| DB Storage  | MySQL                    |
+| Environment | Conda / Python 3.11+     |
+| Data        | `brand_models.json`      |
 
 ---
 
@@ -108,11 +112,11 @@ mysql.connector.connect(
 
 ## 🧠 LM Studio Configuration
 
-1. Download **LM Studio**: https://lmstudio.ai
+1. Download **LM Studio**: [https://lmstudio.ai](https://lmstudio.ai)
 2. Load a quantized model (e.g., `mistral-7b-instruct` or `openchat`)
 3. Enable: `⚙️ Settings > Allow Local API Access`
 4. Note your API endpoint (e.g., `http://localhost:1234/v1/completions`)
-5. Update `llm_client.py` with your IP/port if needed.
+5. Update `llm_client.py` with your IP/port if needed
 
 ---
 
@@ -140,33 +144,35 @@ Visit: [http://localhost:8501](http://localhost:8501)
 
 ## ❓ Troubleshooting
 
-| Problem                          | Fix                                              |
-|----------------------------------|--------------------------------------------------|
-| Quote text disappears            | Ensure `st.session_state` is used correctly      |
-| PDF text gets cut off            | Use `generate_pdf.py` with `Platypus`            |
-| LM Studio returns blank output   | Use `mistral-instruct` or `chat`-style models    |
-| Database not saving              | Check MySQL running and credentials in `db.py`   |
-| Port 1234 not reachable          | Recheck LM Studio's “Allow Local API” setting    |
+| Problem                        | Fix                                            |
+| ------------------------------ | ---------------------------------------------- |
+| Quote text disappears          | Ensure `st.session_state` is used correctly    |
+| PDF text gets cut off          | Use `generate_pdf.py` with `Platypus`          |
+| LM Studio returns blank output | Use `mistral-instruct` or `chat`-style models  |
+| Database not saving            | Check MySQL running and credentials in `db.py` |
+| Port 1234 not reachable        | Recheck LM Studio's “Allow Local API” setting  |
 
 ---
 
 ## 🔒 Offline Capability
 
-✅ 100% Offline  
-- No internet required after initial setup  
-- All AI runs locally via LM Studio  
-- PDF and DB storage is local
+✅ 100% Offline
+
+* No internet required after initial setup
+* All AI runs locally via LM Studio
+* PDF and DB storage is local
 
 ---
 
 ## 🤝 Contributors
 
-- Built for **Johnston Group Australia**
-- Designed by internal innovation team
-- Powered by open-source AI and Python tools
+* Designed and developed for internal enterprise use
+* Powered by open-source AI and Python tools
 
 ---
 
 ## 📃 License
 
 MIT License — Use and modify freely for internal enterprise AI integration.
+
+---
